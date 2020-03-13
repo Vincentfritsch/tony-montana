@@ -1,6 +1,6 @@
 .tony-body {
-	color: #0092b5;
-	background: #26262d;
+	color: rgba(255, 255, 255, 0.55);
+	background: #0092b5;
 	font-family: 'Poppins', sans-serif;
 	margin: 0 8px;
 }
