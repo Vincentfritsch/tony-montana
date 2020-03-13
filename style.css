@@ -1,100 +1,495 @@
-body{
-  color: white;
-  font-size: 24px;
-  background-image: url("http://romainbioulez.fr/wp-content/uploads/background-vect1.svg");
+.tony-body {
+	color: rgba(255, 255, 255, 0.55);
+	background: #26262d;
+	font-family: 'Poppins', sans-serif;
+	margin: 0 8px;
 }
 
-ul{
-  list-style: none;
+.top-negative {
+	top: -5%;
+	position: relative;
 }
 
-main{
-  margin-bottom: 80px;
+/* Header */
+
+.header {
+	z-index: 10;
+	top: 0;
+	background: #31313a;
+	width: calc(100% - 16px);
+	height: 70px;
+	position: fixed;
+	text-transform: uppercase;
+	border-radius: 5px 5px 0 0;
+	box-shadow: black 1px 1px 50px;
 }
 
-main h1, main h2{
-  color: black;
-  text-align: center;
-  margin: 20px 0;
+.tony-nav {
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
 }
 
-main h1{
-  font-size: 50px;
+.tony-nav-item {
+	display: flex;
+	flex-direction: column;
+	color: white;
+	text-decoration: none;
+	width: 25%;
+	text-align: center;
+	border-right: solid 1px #676767c7;
 }
 
-main h2{
-  font-size: 30px;
+.tony-nav-item:last-child {
+	border: none
 }
 
-.ind-h1-desc{
-  color: black;
-  text-align: center;
-  font-size: 30px;
-  margin: 20px 0;
+.tony-nav-item span {
+	font-size: 12px;
+	margin-top: 5px;
 }
 
-/* Navigation */
-.ind-nav{
-  display: flex;
-  background: black;
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
+.tony-nav-item i {
+	font-size: 30px;
 }
 
-main h1{
-  margin-top: 100px;
+/* Main content design */
+
+.main {
+	background: #31313a;
+	height: calc(100vh - 70px);
+	position: relative;
 }
 
-.ind-nav-ul{
-  display: flex;
-  width: 100%;
-  justify-content: center;
+.background-profile {
+	margin-top: 70px;
+	width: 100%;
 }
 
-.ind-nav-li{
-  width: 100px;
-  padding: 0 10px;
-  text-align: center;
+/* Tony profile */
+
+.tony-profile-main {
+	width: 30%;
+	height: auto;
+	border-radius: 50%;
+	border: solid 3px grey;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: -15%;
+	position: relative;
 }
 
-/* Main content */
-.ind-main-content{
-  color: black;
+.tony-name {
+	margin-top: 20px;
+	color: white;
+	text-align: center;
+	font-size: 34px;
 }
 
-.ind-tony-profile-container{
-  display: flex;
-  justify-content: center;
-  margin-top: 20px;
-  border-radius: 50px;
+.tony-subtitle {
+	font-size: 16px;
+	text-align: center;
+	color: #ff9800;
 }
 
-.ind-tony-profile{
-  min-width: 300px;
-  max-width: 500px;
-  height: auto;
-  border-radius: 50%;
+.tony-subtitle-span:before {
+	content: '';
+	animation: animate infinite 8s;
 }
 
-.ind-soft-skills, .ind-hard-skills {
-  text-align: center;
+@keyframes animate {
+	0% {
+		content: "Butcher specialist";
+	}
+	25% {
+		content: "Cocaine consumer";
+	}
+	50% {
+		content: "Cocaine dealer";
+	}
+	75% {
+		content: "Mafia chief";
+	}
+	100% {
+		content: "Specialist Butcher";
+	}
+}
+
+/* Tony social*/
+
+.tony-social {
+	display: flex;
+	justify-content: center;
+}
+
+.tony-social-item {
+	text-decoration: none;
+	width: 24px;
+	height: 24px;
+	margin: 20px 5px;
+}
+
+.tony-social-item i {
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
 }
 
 /* Footer */
-footer{
-  display: flex;
-  justify-content: center;
-  background: black;
-  width: 100%;
-  bottom: 0;
-  left: 0;
-  position: fixed;
+
+.footer {
+	background: #31313a;
+	width: 100%;
+	height: 70px;
+	text-transform: uppercase;
+	display: flex;
+	border-radius: 0 0 5px 5px;
 }
 
-.ind-footer-item{
-  padding: 10px;
-  text-decoration: none;
-  color: lightgreen;
+.tony-footer-item {
+	display: flex;
+	flex-direction: row;
+	color: white;
+	text-decoration: none;
+	width: 50%;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	font-size: 12px;
+}
+
+.tony-footer-item span {
+	padding-right: 15px;
+}
+
+.tony-footer-item:first-child {
+	border-right: solid 1px #676767c7;
+}
+
+.tony-footer-item {
+	border-top: solid 1px #676767c7;
+}
+
+/* More infos */
+
+.single-img-container img {
+	width: 100%;
+	height: auto;
+}
+
+.tony-more-info {
+	position: relative;
+	background: #31313a;
+	width: calc(100% - 60px);
+	padding: 30px;
+	margin: 20px 0;
+	border-radius: 5px;
+}
+
+.soft-container, .hard-container, .about-container {
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.tony-about-me:before, .tony-soft-skills:before, .tony-hard-skills:before, .tony-skills:before, h2.ind-main-title:before {
+	content: '';
+	position: absolute;
+	left: -10px;
+	top: 10px;
+	width: 30px;
+	height: 30px;
+	background: linear-gradient(135deg, rgba(120, 204, 109, 0.4) 0%, rgba(120, 204, 109, 0.01) 100%);
+	border-radius: 50%;
+}
+
+.tony-birth, .tony-adress, .tony-email {
+	text-align: left;
+}
+
+/* Gradient borders */
+
+.dat_fct:before {
+	content: "";
+	background-image: linear-gradient(to right, #ffffff52, #5e8e629e);
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	margin-top: 20px;
+}
+
+.dat_fct:after {
+	content: "";
+	background-image: linear-gradient(to right, #ffffff52, #5e8e629e);
+	height: 2px;
+	width: 100%;
+	position: absolute;
+	margin-top: -20px;
+}
+
+/* CV */
+
+.dat_fct {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.dat_fct p {
+	text-align: right;
+}
+
+.dat_fct p:first-child {
+	font-weight: bold;
+	font-style: italic;
+	text-align: left;
+}
+
+.arrow {
+	padding: 0 15px;
+}
+
+/* Portfolio */
+
+.img-shadow-1 {
+	-webkit-box-shadow: 0 28px 16px -26px black;
+	-moz-box-shadow: 0 28px 16px -26px black;
+	box-shadow: 0 28px 16px -26px black;
+}
+
+.img-shadow-1:hover {
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-webkit-box-shadow: 0 58px 36px -56px black;
+	-moz-box-shadow: 0 58px 36px -56px black;
+	box-shadow: 0 58px 36px -56px black;
+}
+
+.img-shadow-1 {
+	transition: all .6s ease-in-out;
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+}
+
+.img-shadow-1:hover {
+	transition: all .6s ease-in-out;
+	-webkit-transition: all .6s ease-in-out;
+	-moz-transition: all .6s ease-in-out;
+	-ms-transition: all .6s ease-in-out;
+	-o-transition: all .6s ease-in-out;
+}
+
+.image-hover {
+	border: 10px solid #fff;
+	box-shadow: 0px 2px 3px black;
+	-moz-box-shadow: 0px 2px 3px black;
+	cursor: pointer;
+}
+
+.single-img-container {
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+
+.single-img-container.image-hover.img-shadow-1 p {
+	display: none;
+	padding: 0;
+	margin: 0;
+}
+
+.single-img-container.image-hover.img-shadow-1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: auto;
+	height: auto;
+	background-size: cover;
+	text-align: center;
+}
+
+.single-img-container.image-hover.img-shadow-1:hover p {
+	display: flex;
+	position: absolute;
+	width: calc(100% - 80px);
+}
+
+.single-img-container:hover .overlay {
+	background: black;
+	width: 100%;
+	height: 100%;
+	opacity: 0.85;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 0;
+}
+
+.overlay {
+	display: none;
+	text-align: center;
+	margin: 0;
+}
+
+/* Contact */
+.form-item input, .form-item select, .form-item textarea{
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.form-item textarea{
+  height: 200px;
+}
+
+.form-item select{
+  height: 40px;
+  margin: 0;
+  width: calc(100% + 5px);
+}
+
+.form-button{
+  float: right;
+  height: 30px;
+  border-radius: 5px;
+}
+
+.tony-form{
+  margin-top: 40px;
+}
+
+/* 576px - 768px - 992px - 1200px */
+
+@media screen and (min-width: 576px) {
+	.tony-nav-item span {
+		font-size: 16px;
+		margin-top: 2px;
+	}
+	.tony-social-item {
+		text-decoration: none;
+		width: 26px;
+		height: 26px;
+	}
+	.tony-social-item i {
+		font-size: 26px;
+	}
+	.tony-footer-item {
+		font-size: 16px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.tony-body {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	.tony-nav, .header {
+		display: flex;
+		flex-direction: column;
+	}
+	.header {
+		position: absolute;
+		height: 323px;
+		width: 80px;
+		border-radius: 5px;
+		margin-left: calc(((100vw - 600px) / 2) - 100px);
+	}
+	.tony-nav {
+		margin-top: 0;
+	}
+	.tony-nav-item {
+		width: 80px;
+		height: 80px;
+		border: none;
+		border-bottom: 1px solid grey;
+		align-items: center;
+		justify-content: center;
+	}
+	.tony-nav-item span {
+		font-size: 12px;
+		margin-top: 10px
+	}
+	.tony-nav-item i {
+		font-size: 16px;
+	}
+	.background-profile {
+		margin-top: 0;
+	}
+	.tony-footer-item {
+		font-size: 20px;
+	}
+	.tony-body-inner {
+		margin: 0 auto;
+	}
+	.main, .main-container, .main-outter-container {
+		width: 600px;
+		height: 600px;
+		border-radius: 5px;
+		margin: 0 auto;
+	}
+	.footer {
+		width: 600px;
+		height: 70px;
+		margin: 0 auto;
+	}
+	.tony-more-info {
+		width: 540px;
+		margin: 80px auto 0 auto;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.tony-body {
+		flex-wrap: nowrap;
+		margin-top: calc((100vh - 650px) / 2);
+	}
+	.main-outter-container {
+		display: flex;
+		width: 1100px;
+		margin-left: calc(((100vw - 1100px) / 2) + 40px);
+	}
+	.header {
+		position: absolute;
+		margin-left: calc(((100vw - 1100px) / 2) - 45px);
+		margin-top: calc((100vh - 650px) / 2);
+	}
+	.tony-more-info {
+		width: 100%;
+		height: 580px;
+		margin: 0 auto;
+		overflow-y: scroll;
+		border-radius: 0 5px 5px 0;
+		margin-top: 10px;
+	}
+	.main-container {
+		box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+		z-index: 10;
+	}
+	.main, .background-profile {
+		border-radius: 5px 5px 0 0;
+	}
+	#style-10::-webkit-scrollbar {
+		width: 10px;
+		background-color: #F5F5F5;
+	}
+	#style-10::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background: linear-gradient(left, #96A6BF, #63738C);
+		box-shadow: inset 0 0 1px 1px #5C6670;
+	}
+	#style-10::-webkit-scrollbar-track {
+		border-radius: 10px;
+		background: #eee;
+		box-shadow: 0 0 1px 1px #bbb, inset 0 0 7px rgba(0, 0, 0, 0.3)
+	}
+	#style-10::-webkit-scrollbar-thumb:hover {
+		background: linear-gradient(left, #8391A6, #536175);
+	}
 }
