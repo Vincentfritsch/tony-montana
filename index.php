@@ -5,6 +5,7 @@
 	<?php include("./main-container.php");?>
         <div class="tony-more-info" id="style-10">
 			<div class="about-container">
+			<div id="top"></div>
 				<h2 class="tony-about-me">About me</h2>
 				<p>Hi there. You probably knows me already, but let's take a look at what I have done in my life, and what I'm good at. Happy browsing to you!</p>
 			</div>

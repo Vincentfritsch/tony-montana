@@ -398,7 +398,7 @@
   #button:active {
 	background-color: #555;
   }
-  #button.show {
+  #button {
 	opacity: 1;
 	visibility: visible;
   }

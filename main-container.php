@@ -12,7 +12,7 @@
 					<a class="tony-social-item" href="https://www.facebook.com"><i class="fab fa-facebook"></i></a> <a class="tony-social-item" href="https://www.twitter.com"><i class="fab fa-twitter-square"></i></a> <a class="tony-social-item" href="https://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
 				</div>
 			</main>
-			<a id="button"></a>
+			<a id="button" href="#top"></a>
 			<footer class="footer">
 				<a class="tony-footer-item" href="#"><span class="link">Download CV</span> <i class="fas fa-download"></i></a> <a class="tony-footer-item" href="contact.html"><span class="link">Who am I ?</span> <i class="fas fa-user-tie"></i></a>
 			</footer>
