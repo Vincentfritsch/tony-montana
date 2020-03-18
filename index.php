@@ -1,8 +1,6 @@
-<?php include("./head.php");?>
+<?php require("./head.php");?>
 
-<?php include("./header.php");?>
 
-	<?php include("./main-container.php");?>
         <div class="tony-more-info" id="style-10">
 			<div class="about-container">
 			<div id="top"></div>
