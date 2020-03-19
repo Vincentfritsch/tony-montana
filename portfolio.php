@@ -12,10 +12,10 @@ require("./images.php");
         <?php foreach($images as $image => $texte){echo '
         <figure class="single-img-container image-hover img-shadow-1">
           <img src=" '.$image.'" 
-          alt="'.$texte.'">
+          alt="'.$texte[0].'" title="'.$texte[1].'">
 					<div class="overlay">
             <p>
-            '.$texte.'
+            '.$texte[0].'
             </p>
           </div>
         </figure>';}?>

@@ -1,4 +1,6 @@
-<?php require("./head.php");?>
+<?php require("./head.php");
+	require("./presentation.php");
+?>
 
 
         <div class="tony-more-info" id="style-10">
@@ -9,6 +11,7 @@
 			</div>
 			<div class="soft-container">
 				<h2 class="tony-soft-skills">My soft skills</h2>
+
 				<ul class="ind-soft-skills">
 					<li>I'm so handsome!</li>
 					<li>I'm ballzy!</li>

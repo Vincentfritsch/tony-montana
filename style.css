@@ -145,8 +145,20 @@
 	text-transform: uppercase;
 	display: flex;
 	border-radius: 0 0 5px 5px;
+	text-decoration: none;
 }
 
+footer a{
+
+	color: white;
+	display: flex;
+	text-align: center;
+}
+.mentions{
+	display: flex;
+	flex-direction: column;
+
+}
 .tony-footer-item {
 	display: flex;
 	flex-direction: row;
@@ -333,7 +345,7 @@
 }
 
 .overlay {
-	display: none;
+	/*display: none;*/
 	text-align: center;
 	margin: 0;
 }
@@ -377,7 +389,7 @@
 	bottom: 30px;
 	right: 30px;
 	transition: background-color .3s, 
-	  opacity .5s, visibility .5s;
+	opacity .5s, visibility .5s;
 	opacity: 0;
 	visibility: hidden;
 	z-index: 1000;
