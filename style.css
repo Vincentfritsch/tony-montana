@@ -1,3 +1,12 @@
+a:hover{
+	color:red;
+}
+input:valid {
+	box-shadow: 0 0 2px 1px green;
+ }
+input:invalid {
+	box-shadow: 0 0 2px 1px red;
+ }
 .tony-body {
 	color: rgba(255, 255, 255, 0.55);
 	background: #26262d;
@@ -157,14 +166,18 @@ footer a{
 .mentions{
 	display: flex;
 	flex-direction: column;
-
+	align-items:center;
+	padding-bottom: 1em;
+}
+.mentions a{
+	text-decoration: none;
 }
 .tony-footer-item {
 	display: flex;
 	flex-direction: row;
 	color: white;
 	text-decoration: none;
-	width: 50%;
+	width: 32%;
 	text-align: center;
 	justify-content: center;
 	align-items: center;
@@ -405,10 +418,10 @@ footer a{
   }
   #button:hover {
 	cursor: pointer;
-	background-color: #333;
+	background-color: rgb(179, 10, 10);
   }
   #button:active {
-	background-color: #555;
+	background-color: rgb(80, 202, 24);
   }
   #button {
 	opacity: 1;

@@ -13,21 +13,19 @@
 				<h2 class="tony-soft-skills">My soft skills</h2>
 
 				<ul class="ind-soft-skills">
-					<li>I'm so handsome!</li>
-					<li>I'm ballzy!</li>
-					<li>I'm fucking rich!</li>
-					<li>I know that I'm the best!</li>
+				<?php foreach($mySoftSkills as $value){echo "<li>$value</li>"; }?>
+					
 				</ul>
 			</div>
 			<div class="hard-container">
 				<h2 class="tony-hard-skills">My hard skills</h2>
 				<ul class="ind-hard-skills">
-					<li>Excellent productivity on cocaïn based products.</li>
-					<li>Ability to make more money in a single day than you in your whole life.</li>
-					<li>Specialist in butchery!</li>
+				<?php foreach($myHardSkills as $value){echo "<li>$value</li>"; }?>
+					
 				</ul>
 			</div>
 		</div>
 	</div>
+	<?php include("./js.php") ?>
 </body>
 </html>

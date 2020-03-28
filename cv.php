@@ -1,6 +1,7 @@
 
 <?php 
 $title = 'Resume';
+$nav = "cv";
 require("./head.php");
 include("./experience.php");
 ?>
@@ -10,10 +11,10 @@ include("./experience.php");
       <div class="tony-more-info" id="style-10">
         <div class="about-container">
           <div id="top"></div>
-          <h2 class="ind-main-title">About me</h2>
-          <p class="tony-email">tonyisarock@montana.world</p>
-          <p class="tony-adress">Adress: Ocean Drive, Miami Beach</p>
-          <p class="tony-birth">Birth : May 5, 1940</p>
+          <?php foreach($about as $k=>$value){echo'<h2 class="ind-main-title">'.$k.'</h2>
+          <p class="tony-email">'.$value[0].'</p>
+          <p class="tony-adress">'.$value[1].'</p>
+          <p class="tony-birth">Birth :'.$value[2].'</p>';}?>
         </div>
         <div class="about-container">
           <h2 class="ind-main-title">Experiences</h2>
@@ -54,6 +55,7 @@ include("./experience.php");
       </div>
     </div>
   </div>
+  <?php include("./js.php") ?>
   </body>
 
 </html>

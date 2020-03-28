@@ -11,4 +11,10 @@ $experiences=[
         'Dishwasher in a restaurant','Do it for money in a new country','Realized that I\'m worth more than that','Talking about his hands, "They ought to be picking gold from the street"']
     
 ];
+$about=[
+    'About'=>[
+        'tonyisarock@montana.world',
+        'Adress: Ocean Drive, Miami Beach',
+        'Birth : May 5, 1940']
+];
 ?>

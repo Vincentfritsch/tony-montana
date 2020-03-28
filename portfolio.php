@@ -1,4 +1,5 @@
 <?php 
+$nav = "portfolio";
 $title = 'Portfolio';
 require("./head.php");
 require("./images.php");
@@ -21,7 +22,8 @@ require("./images.php");
         </figure>';}?>
 
     </div>
-	</div>
+  </div>
+  <?php include("./js.php") ?>
 </body>
 </html>
 
