@@ -29,7 +29,7 @@ We created this website during mars 9th and mars 13th 2020.
 
 <h2>Version</h2>
 
-V.1.0.0 - Initial release
+<strong><bold>V.1.0.0 - Initial release</bold></strong>
 
 
 <h2>Where we were ?</h2>
@@ -41,3 +41,13 @@ This project was our first project for the Wild Code School in Strasbourg.
 
 In progress... Next week, we're going to make this website dynamic thanks to PHP.
 See you soon...
+
+<strong><bold>V.1.2.0</bold></strong>
+
+Dynamized the site with php a lot of tab...
+Some rectification as go to the top
+
+
+<stong><bold> V.1.5.0</bold></strong>
+
+Informations from the form send to a DataBase ;-)
