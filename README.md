@@ -48,6 +48,6 @@ Dynamized the site with php a lot of tab...
 Some rectification as go to the top
 
 
-<stong><bold> V.1.5.0</bold></strong>
+<strong><bold> V.1.5.0</bold></strong>
 
 Informations from the form send to a DataBase ;-)
