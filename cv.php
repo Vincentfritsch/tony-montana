@@ -4,12 +4,13 @@ $title = 'Resume';
 $nav = "cv";
 require("./head.php");
 include("./experience.php");
-?>
+require("./connec.php");
 
-    
-      
+
+?>
       <div class="tony-more-info" id="style-10">
         <div class="about-container">
+        <a href="login.php" onclick="login()">LOGIN</a>
           <div id="top"></div>
           <?php foreach($about as $k=>$value){echo'<h2 class="ind-main-title">'.$k.'</h2>
           <p class="tony-email">'.$value[0].'</p>
@@ -19,30 +20,58 @@ include("./experience.php");
         <div class="about-container">
           <h2 class="ind-main-title">Experiences</h2>
         
-            <?php foreach($experiences as $date=>$exp)
-            {
+            <?php 
+            $pdo = new \PDO(DSN, USER, PASS);
+            $query = "SELECT * FROM experience ORDER BY date_job DESC";
+            $statement = $pdo->query($query);
+            $experiences= $statement->fetchAll();
+            
+            foreach($experiences as $exp)
+            {?>
     
-          echo "<div class='ind-main-container'>";
-            echo "<div class='dat_fct'>";
-              echo "<p class='ind-date'>$date</p>";
-              echo" <p class='arrow'>&gt;</p>";
-              echo" <p class='ind-fct'>$exp[0]</p>";
-          echo" </div>";
+            <div class='ind-main-container'>
+              <div class='dat_fct'>
+              <p class='ind-date'> <?php echo" $exp[date_job]";?> </p>
+               <p class='arrow'>&gt;</p>
+               <p class='ind-fct'><?php echo "$exp[job]";?></p>
+           </div>
 
-            $element=count($exp);
-            for($i=1;$i<$element;$i++){
+            <?php 
             echo "<div class='skill'>";
               echo "<p class='fake'></p>";
               echo "<div class='ind-skill1'>";
                 echo " <ul>";
-                  echo"<li>$exp[$i]</li>";
+                  echo"<li>$exp[exp1]</li>";
                  echo" </ul>";
-            }
+              echo "</div>";
+              
+              echo "<div class='skill'>";
+              echo "<p class='fake'></p>";
+              echo "<div class='ind-skill1'>";
+                echo " <ul>";
+                  echo"<li>$exp[exp2]</li>";
+                 echo" </ul>";
+              echo "</div>";
+              echo "<div class='skill'>";
+              echo "<p class='fake'></p>";
+              echo "<div class='ind-skill1'>";
+                echo " <ul>";
+                  echo"<li>$exp[exp3]</li>";
+                 echo" </ul>";
+              echo "</div>";
+              echo "<div class='skill'>";
+              echo "<p class='fake'></p>";
+              echo "<div class='ind-skill1'>";
+                echo " <ul>";
+                  echo"<li>$exp[exp4]</li>";
+                 echo" </ul>";
+              echo "</div>";
               }?>
-             </div>
+             
           </div>
+          <a id="button" href="#top"></a> 
         </div>
-    
+              
       <div class="soft-container">
         <h2 class="tony-skills">Skills</h2>
         <ul class="ind-soft-skills">
@@ -56,6 +85,7 @@ include("./experience.php");
     </div>
   </div>
   <?php include("./js.php") ?>
+  <script type="text/javascript" src="login.js"> </script>
   </body>
 
 </html>

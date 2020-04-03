@@ -215,13 +215,20 @@ footer a{
 .soft-container, .hard-container, .about-container {
 	position: relative;
 	margin-bottom: 80px;
+	
+}
+.about-container a{
+	text-decoration: none;
+	color: #F5F5F5;
+	margin-left: 75%;
+	font-family: FontAwesome;
 }
 
 .tony-about-me:before, .tony-soft-skills:before, .tony-hard-skills:before, .tony-skills:before, h2.ind-main-title:before {
 	content: '';
 	position: absolute;
 	left: -10px;
-	top: 10px;
+	
 	width: 30px;
 	height: 30px;
 	background: linear-gradient(135deg, rgba(120, 204, 109, 0.4) 0%, rgba(120, 204, 109, 0.01) 100%);

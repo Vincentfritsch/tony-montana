@@ -32,9 +32,9 @@ $tonySocial=[
 
 ];
 $tonyFooter=[
-    '#'=>[
+    './printcv.php'=>[
         'Want my resumé',
-        'Download CV'
+        'Print my Résumé'
         ],
     './contact.php'=>[
         'Want to contact me',

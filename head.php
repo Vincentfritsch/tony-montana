@@ -15,9 +15,7 @@ $nav = "accueil";?>
     <meta content="Momo, Vince, Mooks" name="author">
     <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    
-    
-  <!--  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+     
     <link href="style.css" rel="stylesheet">
     
 </head>
@@ -42,12 +40,12 @@ $nav = "accueil";?>
 					<span class="tony-subtitle-span"></span>
 				</div>
 				<div class="tony-social top-negative">
-                <?php  foreach($tonySocial as $k=>$value){echo '<a href="'.$k.'"><img src="'.$value[0].'" class="tony-social-item"  title="'.$value[1].'"><i class="fab fa-facebook"></i></img> </a>';} ?>
+                <?php  foreach($tonySocial as $k=>$value){echo '<a href="'.$k.'"><img src="'.$value[0].'" class="tony-social-item"  title="'.$value[1].'"></img> </a>';} ?>
                                    
                 </div>
                 
 			</main>
-			<a id="button" href="#top"></a>
+			
 			<footer class="footer">
             <?php foreach($tonyFooter as $k=>$value){echo '  <a class="tony-footer-item" href="'.$k.'" title="'.$value[0].'"><span class="link">'.$value[1].'</span> <i class="fas fa-download"></i>
                 </a>'; } ?>
